@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+body {
+    background-image: url(https://wallpaperaccess.com/full/2862297.jpg);
+    background-size: cover;
+    font-size: 45px;
+    
+    justify-content: center;
+    align-items: center;
+    color: rgb(97, 31, 102);
+    
+}
+h1 {
+    align-items: center;
+    justify-content: center;
+    color: rgb(182, 41, 172);
+    display: flex;
+    font-size: 35px;
+    margin: 10px auto;
+    padding: 5px 30px 50px 30px;
+
+
+}
+.piano {
+    width:70%;
+    height: 250px;
+    margin: 20px auto;
+    display:flex;
+    padding: 15px;
+    justify-content: center;
+
+}
+.key {
+    cursor:pointer;
+    width:10%;
+    height: 250px;
+    border: 2px solid grey;
+    font-size: 40px;
+    border-radius: 0 0 5px 5px;
+    transition:  .1s;
+    background-color: whitesmoke;
+    display: inline-block;
+    font-size: 35px;
+}
+.black-key {
+    background: black;
+    font-size: 30px;
+    height: 60%;
+    width: 55px;
+    margin-left: -35px;
+    margin-right: -35px;
+    z-index: 2;
+
+}
+.key:active {
+    background: lightpink;
+}
+.black-key:active {
+    background: lightskyblue;
+}
+#start {
+   
+    margin: 30px;
+    border:2px solid rgb(182, 41, 172);
+    border-radius: 5%;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin:auto
+
+
+}
+#start:active {
+    background: lightskyblue;
+}
+#button-result {
+    
+    height: 5em;
+    width: 5em;
+    border:2px solid rgb(182, 41, 172);
+    border-radius: 10px;
+    margin:30px;
+    display:inline-block;
+    align-items: flex-start;
+    justify-content: center;
+}
+#button-notes {
+    height: 5em;
+    width: 5em;
+    align-items: flex-start;
+    justify-content: center;
+    display:inline-block;
+    border: 2px solid rgb(182, 41, 172);
+    border-radius: 10px;
+    align-content: stretch;
+    margin:30px;
+}
+
+    
+
+    

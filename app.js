@@ -20,8 +20,18 @@ function play(key) {
         key.classList.remove("active")
     })
 }
-const levelOneNotes = [C, D, E]
-const levelTwoNotes = [C, D, E, F, G]
-const levelTreeNotes = [C, D, E, F, G, A, B]
+function checkNotes(arr) {
+
+}
+const levelOneNotes = ["C", "E", "C", "C", "E", "C", "D", "C", "E", "E", "D", "C"]
+const levelTwoNotes = ["E", "E", "F", "G", "G", "F", "E", "D", "C", "C", "D", "E", "E", "D", "D", "E", "E", "F", "G", "G", "F", "E", "D", "C", "C", "D", "E", "D", "C", "C" ]
+const levelTreeNotes = [ "A", "B", "A", "B", "C", ]
 const levelFourBlacknotes = [Df, Ef, Gf, Af, Bf]
 const levelfiveAllNotes  = [C, D, E, F, G, A, B, Df, Ef, Gf, Af, Bf]
+for(i = 0; i < arr.length; i ++) {
+
+}
+
+
+//document.querySelector("#restart").addEventListener('click', function(){
+    //window.location.reload();

@@ -64,7 +64,7 @@ notes.addEventListener("click", (e) => {
     
 
 });
-/*
+
 document.querySelector("#restart").addEventListener('click', function(){
     window.location.reload();
     result = "Result:";

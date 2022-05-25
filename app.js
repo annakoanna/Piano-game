@@ -28,18 +28,20 @@ function play(key) {
         score = score + 1;
         level = levelFourBlacknotes;
         wrongNote(key)
+        scoreUpdate(key)
         changeText(level)
     } else if (score >= 30) {
         score = score + 1;
         level = levelTreeNotes;
         wrongNote(key)
+        scoreUpdate(key)
         changeText(level)
     } else if (score >= 15) {
         score = score + 1;
         level = levelTwoNotes;
         console.log("you on round 2")
         wrongNote(key)
-
+        scoreUpdate(key)
         changeText(level)
 
     } else if
@@ -49,7 +51,7 @@ function play(key) {
         console.log(score);
         level = levelOneNotes;
         wrongNote(key)
-
+        scoreUpdate(key)
         changeText(level)
 
     }// else if (key.id !== notes.innerText) {
@@ -79,6 +81,14 @@ function wrongNote(key) {
         changeText(level)
     }
 }
+function scoreUpdate(key) {
+    
+    if (key.id === notes.innerText) {
+    
+        result.innerText = `Score: ${score  }`
+
+    }
+}
 
 function changeText(arr) {
     //for (let i = 0; i < arr.length; i++) {
@@ -96,7 +106,10 @@ notes.addEventListener("click", (e) => {
 
     //changeText(levelOneNotes);
     startLevel.addEventListener("click", (e) => {
-        if (score == 15) {
+        if (score > 15) {
+            startLevel.innerText = "Level 2"
+        } else if (score >= 30) {
+            startLevel.innerText = "Level 3"
 
         }
     })

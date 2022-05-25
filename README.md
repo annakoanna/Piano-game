@@ -1,9 +1,9 @@
 # Piano-game
 
-# Game target.
+## Game target.
 Piano game for child or adult begginers. Game will help begginers to study notes on piano and have fun.
 
-## How to play.Instraction
+### How to play.Instraction
 
 Game will have levels, be able to go to next level you will need to get score.
 
@@ -13,11 +13,11 @@ Each level will be more difficult.
 
 Also you will be able to play on piano any notes without 
 
-### Technologies Used 
+#### Technologies Used 
  HTML 
 
  CSS 
 
  Javascript (logic and DOM manipulation)
 
-#### Wireframes  
+##### Wireframes  

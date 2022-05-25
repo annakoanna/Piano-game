@@ -157,6 +157,15 @@ h1 {
     display: flex;
 
 }
+.end-game {
+    align-items: center;
+    justify-content: center;
+    color: rgb(182, 41, 172);
+    display: none;
+
+}
+
+
 
     
 

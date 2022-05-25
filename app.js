@@ -6,7 +6,8 @@ const notes = document.getElementById('button-notes')
 let score = 0;
 const restart = document.getElementById("restart");
 let level
-
+let endGame = document.querySelector(".end-game")
+let wrongKey = false;
 
 
 
@@ -25,22 +26,30 @@ function play(key) {
     })
     console.log(key.id)
     if (score >= 45) {
+        startLevel.innerText = "Level 4"
+
         score = score + 1;
         level = levelFourBlacknotes;
         wrongNote(key)
+        showMessage()
         scoreUpdate(key)
         changeText(level)
     } else if (score >= 30) {
+        startLevel.innerText = "Level 3"
+
         score = score + 1;
         level = levelTreeNotes;
         wrongNote(key)
+        showMessage()
         scoreUpdate(key)
         changeText(level)
     } else if (score >= 15) {
+        startLevel.innerText = "Level 2"
         score = score + 1;
         level = levelTwoNotes;
         console.log("you on round 2")
         wrongNote(key)
+        showMessage()
         scoreUpdate(key)
         changeText(level)
 
@@ -51,10 +60,12 @@ function play(key) {
         console.log(score);
         level = levelOneNotes;
         wrongNote(key)
+        showMessage()
         scoreUpdate(key)
         changeText(level)
 
-    }// else if (key.id !== notes.innerText) {
+    }
+    //else if (key.id !== notes.innerText) {
     //alert("Wrong note")
     // score = 0;
     // level = levelOneNotes
@@ -73,20 +84,30 @@ function wrongNote(key) {
     console.log(notes.innerText)
 
     if (key.id !== notes.innerText) {
-        alert("Wrong note")
+        wrongKey = true;
+
+        startLevel.innerText = "Level 1"
+        result.innerText = `Score: 0`
         console.log(key.id)
         console.log(notes.innerText)
         score = 0;
         level = levelOneNotes
         changeText(level)
+
     }
 }
 function scoreUpdate(key) {
-    
-    if (key.id === notes.innerText) {
-    
-        result.innerText = `Score: ${score  }`
 
+    if (key.id === notes.innerText) {
+
+        result.innerText = `Score: ${score}`
+
+    }
+}
+
+function levelUpdate(score) {
+    if (score >= 15) {
+        startLevel.innerText = "Level 2"
     }
 }
 
@@ -104,7 +125,6 @@ notes.addEventListener("click", (e) => {
 
     }
 
-    //changeText(levelOneNotes);
     startLevel.addEventListener("click", (e) => {
         if (score > 15) {
             startLevel.innerText = "Level 2"
@@ -112,25 +132,40 @@ notes.addEventListener("click", (e) => {
             startLevel.innerText = "Level 3"
 
         }
-    })
-
-
-
-
-
-
-
-    //setTimeout(changeText)
-
+    });
 
 });
 
 document.querySelector("#restart").addEventListener('click', function () {
     window.location.reload();
-    result = "Result:";
+    result = "Score: 0";
 
 
 });
+function showMessage() {
+
+    if (score === 60) {
+        endGame.style.display = "flex"
+
+        endGame.innerText = "Congratulations! You won!!!!"
+
+    } else if (wrongKey === true) {
+        endGame.style.display = "flex"
+
+        endGame.innerText = "Wrong note!!!"
+        wrongKey = false
+
+    } else if (score == 15 || score == 30 || score == 45) {
+        endGame.style.display = "flex"
+
+        endGame.innerText = "Congratulations!!! you pass this level!!!"
+    } else if (score == 0 && wrongKey === false) {
+
+    endGame.style.display = "none"
+}else {
+    endGame.style.display = "none"
+}
+};
 
 
 

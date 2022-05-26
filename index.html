@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,39 +8,36 @@
     <title>Piano</title>
     <link rel="stylesheet" href="style.css">
     <script src="app.js" async defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat+Subrayada&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
-    <h1>Piano game</h1>
+    <h1>Piano Forte</h1>
 
     <div class="buttons">
-    <button type="notes" id="button-notes">Start</button>
-    <button type="result" id="button-result">Score: 0</button>
-    <button type="level" id="level">Level 1</button>
-    <button type="restart" id="restart">Restart</button>
+        <button type="notes" id="button-notes">Start</button>
+        <button type="result" id="button-result">Score: 0</button>
+        <button type="level" id="level">Level 1</button>
+        <button type="restart" id="restart">Restart</button>
     </div>
 
-    
-        <div class="end-game"></div>
-        
-        
-    
-    
-    
+    <div class="end-game"></div>
 
     <div class="piano">
         <div data-note="C-s" class="white-key key" id="C"></div>
-        <div  data-note="Df-s" class="black-key key" id="Df"></div>
-        <div  data-note="D-s" class="white-key key" id="D"></div>
-        <div  data-note="Ef-s" class="black-key key" id="Ef"></div>
-        <div  data-note="E-s" class="white-key key" id="E"></div>
-        <div  data-note="F-s" class="white-key key" id="F"></div>
-        <div  data-note="Gf-s" class="black-key key" id="Gf"></div>
-        <div  data-note="G-s" class="white-key key" id="G"></div>
-        <div  data-note="Af-s" class="black-key key" id="Af"></div>
-        <div  data-note="A-s" class="white-key key" id="A"></div>
-        <div  data-note="Bf-s" class="black-key key" id="Bf"></div>
-        <div  data-note="B-s" class="white-key key" id="B"></div>
-        
+        <div data-note="Df-s" class="black-key key" id="Df"></div>
+        <div data-note="D-s" class="white-key key" id="D"></div>
+        <div data-note="Ef-s" class="black-key key" id="Ef"></div>
+        <div data-note="E-s" class="white-key key" id="E"></div>
+        <div data-note="F-s" class="white-key key" id="F"></div>
+        <div data-note="Gf-s" class="black-key key" id="Gf"></div>
+        <div data-note="G-s" class="white-key key" id="G"></div>
+        <div data-note="Af-s" class="black-key key" id="Af"></div>
+        <div data-note="A-s" class="white-key key" id="A"></div>
+        <div data-note="Bf-s" class="black-key key" id="Bf"></div>
+        <div data-note="B-s" class="white-key key" id="B"></div>
+
     </div>
     <audio src="notes/notes_C.mp3" id="C-s"></audio>
     <audio src="notes/notes_Db.mp3" id="Df-s"></audio>
@@ -53,7 +51,7 @@
     <audio src="notes/notes_A.mp3" id="A-s"></audio>
     <audio src="notes/notes_Bb.mp3" id="Bf-s"></audio>
     <audio src="notes/notes_B.mp3" id="B-s"></audio>
-    
+
 </body>
 
 </html>

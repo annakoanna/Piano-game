@@ -3,158 +3,182 @@
     box-sizing: border-box;
     padding: 0;
 }
+
 body {
-    background-image: url(https://a0.anyrgb.com/pngimg/1256/1056/popular-music-inked-classical-music-electronic-keyboard-ink-splash-electric-piano-cute-animal-digital-piano-rock-music-cute-border.png);
+    background-image: url(https://images3.alphacoders.com/793/793291.png
+    );
+ 
     background-size: cover;
     font-size: 45px;
-    
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Montserrat Subrayada', sans-serif;
     justify-content: center;
     align-items: center;
-    color: rgb(146, 111, 202);
-    
+    color: rgb(128, 111, 202);
+
 }
+
 h1 {
     align-items: center;
     justify-content: center;
-    color: rgb(146, 111, 202);
+    color: black;
     display: flex;
-    font-size: 2em;
+    font-size: 1.50em;
     margin: 0 auto;
-    padding: 5px 30px 50px 30px;
+    padding: 5px 30px 30px 30px;
     font-style: oblique;
 
 
 }
+
 .piano {
-    width:16em;
+    width: 16em;
     height: 9em;
     margin: 0.5em auto;
-    display:flex;
+    display: flex;
     padding: 15px;
     justify-content: center;
-    
+
 
 }
+
 .key {
-    cursor:pointer;
+    cursor: pointer;
     width: 2em;
     height: 8em;
     border: 2px solid grey;
     font-size: 40px;
     border-radius: 0 0 5px 5px;
-    transition:  .1s;
+    transition: .1s;
     background-color: whitesmoke;
     display: inline-block;
     font-size: 35px;
 }
+
 .black-key {
     background: black;
-    
-    height: 4em;
+
+    height: 5em;
     width: 1em;
     margin-left: -18px;
     margin-right: -18px;
     z-index: 2;
 
 }
+
 .key:active {
     background: lightpink;
 }
+
 .key:hover {
     cursor: pointer;
     stroke: lightpink;
 }
-.black-key:active {
-    background: lightskyblue;
+.black-key:hover {
+    background-color: lightpink;
 }
+
+.black-key:active {
+    background: lightpink;
+}
+.key:hover {
+    background-color: lightskyblue;
+}
+
 #start {
-   
-    margin:0 20px 10px 20px ;
-    
-    border:2px solid rgb(146, 111, 202);
+
+    margin: 0 20px 10px 20px;
+
+    border: 2px solid rgb(146, 111, 202);
     border-radius: 5%;
     cursor: pointer;
     align-items: center;
     justify-content: center;
     display: flex;
-    margin:auto
-
-
+    margin: auto
 }
+
 #start:active {
     background: lightskyblue;
 }
+
 #button-result {
-    
+
     height: 5em;
     width: 5em;
-    border:2px solid rgb(146, 111, 202);
+    border: 2px solid rgb(146, 111, 202);
     border-radius: 10px;
-    margin: 0 20px 10px 20px ;
-    
-    display:inline-block;
+    margin: 0 20px 10px 20px;
+
+    display: inline-block;
     align-items: flex-start;
     justify-content: center;
-    cursor:pointer;
+    cursor: pointer;
 
 }
+
 #button-notes {
     height: 5em;
     width: 5em;
     align-items: flex-start;
     justify-content: center;
-    display:inline-block;
+    display: inline-block;
     border: 2px solid rgb(146, 111, 202);
     border-radius: 10px;
     align-content: stretch;
-    margin:0 20px 10px 20px ;
-    
-    cursor:pointer;
+    margin: 0 20px 10px 20px;
+
+    cursor: pointer;
 
 }
+
 #level {
     height: 5em;
     width: 5em;
     align-items: flex-start;
     justify-content: center;
-    display:inline-block;
+    display: inline-block;
     border: 2px solid rgb(146, 111, 202);
     border-radius: 10px;
     align-content: stretch;
-    margin:0 20px 10px 20px ;
-    
-    cursor:pointer;
+    margin: 0 20px 10px 20px;
+
+    cursor: pointer;
 
 
 }
+
 #restart:hover {
-    background:lightskyblue ;
+    background: lightskyblue;
 }
+
 #level:hover {
-    background:lightskyblue ;
+    background: lightskyblue;
 }
+
 #button-result:hover {
-    background:lightskyblue ;
+    background: lightskyblue;
 }
+
 #button-notes:hover {
-    background:lightskyblue ;
+    background: lightskyblue;
 }
+
 #restart {
     height: 5em;
     width: 5em;
     align-items: flex-start;
     justify-content: center;
-    display:inline-block;
+    display: inline-block;
     border: 2px solid rgb(146, 111, 202);
     border-radius: 10px;
     align-content: stretch;
-    margin:0 20px 10px 20px ;
-    cursor:pointer;
+    margin: 0 20px 10px 20px;
+    cursor: pointer;
 
-   
-    
 
 }
+
 .buttons {
     align-items: center;
     justify-content: center;
@@ -162,16 +186,11 @@ h1 {
     display: flex;
 
 }
+
 .end-game {
     align-items: center;
     justify-content: center;
-    color: rgb(182, 41, 172);
+    color: rgb(170, 78, 145);
     display: none;
 
 }
-
-
-
-    
-
-    

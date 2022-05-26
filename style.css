@@ -4,7 +4,7 @@
     padding: 0;
 }
 body {
-    background-image: url(https://www.teahub.io/photos/full/1-11904_pc-abstract-music-wallpapers-stefanie-igglesden-abstract-high.jpg);
+    background-image: url(https://a0.anyrgb.com/pngimg/1256/1056/popular-music-inked-classical-music-electronic-keyboard-ink-splash-electric-piano-cute-animal-digital-piano-rock-music-cute-border.png);
     background-size: cover;
     font-size: 45px;
     
@@ -69,7 +69,8 @@ h1 {
 }
 #start {
    
-    margin: 30px;
+    margin:0 20px 10px 20px ;
+    
     border:2px solid rgb(146, 111, 202);
     border-radius: 5%;
     cursor: pointer;
@@ -89,7 +90,8 @@ h1 {
     width: 5em;
     border:2px solid rgb(146, 111, 202);
     border-radius: 10px;
-    margin:30px;
+    margin: 0 20px 10px 20px ;
+    
     display:inline-block;
     align-items: flex-start;
     justify-content: center;
@@ -105,7 +107,8 @@ h1 {
     border: 2px solid rgb(146, 111, 202);
     border-radius: 10px;
     align-content: stretch;
-    margin:30px;
+    margin:0 20px 10px 20px ;
+    
     cursor:pointer;
 
 }
@@ -118,7 +121,8 @@ h1 {
     border: 2px solid rgb(146, 111, 202);
     border-radius: 10px;
     align-content: stretch;
-    margin:30px;
+    margin:0 20px 10px 20px ;
+    
     cursor:pointer;
 
 
@@ -144,7 +148,7 @@ h1 {
     border: 2px solid rgb(146, 111, 202);
     border-radius: 10px;
     align-content: stretch;
-    margin:30px;
+    margin:0 20px 10px 20px ;
     cursor:pointer;
 
    

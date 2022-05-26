@@ -1,4 +1,4 @@
-# Piano-game
+# Piano Forte
 
 ## Game target.
 Piano game for child or adult begginers. Game will help begginers to study notes on piano and have fun.

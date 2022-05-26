@@ -78,7 +78,7 @@ const levelTwoNotes = ["E", "E", "F", "G", "G", "F", "E", "D", "C", "C", "D", "E
 const levelTreeNotes = ["G", "G", "G", "D", "E", "E", "D", "B", "B", "A", "A", "G", "D", "G", "G"]
 const levelFourBlacknotes = ["G", "G", "G", "Df", "Ef", "Gf", "Af", "Bf", "A", "B", "Df", "Ef", "Gf", "Af", "B"]
 
-
+//function that detect wrong notes
 function wrongNote(key) {
     console.log(key)
     console.log(notes.innerText)
@@ -96,6 +96,7 @@ function wrongNote(key) {
 
     }
 }
+//function that update score in button
 function scoreUpdate(key) {
 
     if (key.id === notes.innerText) {
@@ -104,13 +105,13 @@ function scoreUpdate(key) {
 
     }
 }
-
+//function that update my levels when you got winning score
 function levelUpdate(score) {
     if (score >= 15) {
         startLevel.innerText = "Level 2"
     }
 }
-
+//function that change my notes randomly
 function changeText(arr) {
     //for (let i = 0; i < arr.length; i++) {
     let randomNote = Math.floor(Math.random() * arr.length)
@@ -135,13 +136,14 @@ notes.addEventListener("click", (e) => {
     });
 
 });
-
+//my restart button reload my page
 document.querySelector("#restart").addEventListener('click', function () {
     window.location.reload();
     result = "Score: 0";
 
 
 });
+//function that show message when you press wrong level or when you pass level , or when you rich winning score
 function showMessage() {
 
     if (score === 60) {
@@ -158,7 +160,7 @@ function showMessage() {
     } else if (score == 15 || score == 30 || score == 45) {
         endGame.style.display = "flex"
 
-        endGame.innerText = "Congratulations!!! you pass this level!!!"
+        endGame.innerText = "Congratulations!!! You pass this level!!!"
     } else if (score == 0 && wrongKey === false) {
 
     endGame.style.display = "none"

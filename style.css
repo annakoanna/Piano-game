@@ -25,9 +25,9 @@ h1 {
 
 }
 .piano {
-    width:70%;
-    height: 250px;
-    margin: 20px auto;
+    width:16em;
+    height: 9em;
+    margin: 2em auto;
     display:flex;
     padding: 15px;
     justify-content: center;
@@ -36,8 +36,8 @@ h1 {
 }
 .key {
     cursor:pointer;
-    width:10%;
-    height: 250px;
+    width: 2em;
+    height: 8em;
     border: 2px solid grey;
     font-size: 40px;
     border-radius: 0 0 5px 5px;
@@ -48,11 +48,11 @@ h1 {
 }
 .black-key {
     background: black;
-    font-size: 30px;
-    height: 70%;
-    width: 60px;
-    margin-left: -35px;
-    margin-right: -35px;
+    
+    height: 4em;
+    width: 1em;
+    margin-left: -18px;
+    margin-right: -18px;
     z-index: 2;
 
 }

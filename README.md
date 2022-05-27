@@ -26,3 +26,4 @@ When you pass 4 levels you will get winning message.
  Javascript (logic and DOM manipulation)
 
 ##### Wireframes  
+![4D57FC7E-7589-4D39-87CA-C427928D2626](https://user-images.githubusercontent.com/105220278/170633045-32e20f85-6a1d-4d85-a205-bf9b56d0b850.jpeg)
